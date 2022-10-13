@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 int main()
-/*
 {
     float h, pm, pf;
     char s;
@@ -26,9 +25,11 @@ int main()
 
 return 0;
 }
-*/
 
-/*
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+int main()
+
 {
     float n1, n2, r;
     int op;
@@ -47,7 +48,7 @@ return 0;
     scanf("%d", &op);
 
     switch (op)
-{
+   {
     case 1:
     r = n1 + n2;
     printf("\n N1 + N2 = %2.f", r);
@@ -70,10 +71,7 @@ return 0;
 
     default:
         printf("DIGITE UM OPERADOR VALIDO PORRA");
-
-}
+   }
 return 0;
-
-
 
 }
