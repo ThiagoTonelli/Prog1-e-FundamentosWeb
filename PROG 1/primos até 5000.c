@@ -11,6 +11,7 @@ for (divisao =2; divisao < primo; divisao++)
 if (primo%divisao == 0)
 {
 qnt++;
+break;
 }
 }
 if (qnt == 0)
