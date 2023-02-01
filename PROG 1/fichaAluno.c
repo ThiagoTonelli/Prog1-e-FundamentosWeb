@@ -17,8 +17,8 @@ int main () {
 void soma_nota (aluno *a);  
 void salvar_arquivo(aluno *a, char* ponteiro);
 void conceito (aluno *a); 
-	aluno b;
-	soma_nota (&b);
+    aluno b;
+    soma_nota (&b);
     printf("A sua media e %2.f\n", b.media);  
     conceito(&b);
     printf("\nDigite o nome do aluno: ");
@@ -44,23 +44,22 @@ void salvar_arquivo(aluno *a, char* ponteiro) {
 void soma_nota (aluno *a) {
 	
 for (int i = 1; i < 5; i++) {
-	
 	printf("Digite sua %d nota: ", i);
-	scanf("%f", &a->vet_soma[i]); }
-
-     a->media = (a->vet_soma[1] + a->vet_soma[2] + a->vet_soma[3] + a->vet_soma[4])/4;
+	scanf("%f", &a->vet_soma[i]); 
+        } 
+ a->media = (a->vet_soma[1] + a->vet_soma[2] + a->vet_soma[3] + a->vet_soma[4])/4;
 	
 }
 
 void conceito (aluno *a)  {
 	
-	if (a->media >= 7.0){
+	if (a->media >= 7.0) {
 		printf("Voce passou direto!!");
 	}
-	if  (a->media < 7.0 && a->media > 5.0){
+	if  (a->media < 7.0 && a->media > 5.0) {
 		printf("Voce ganhou B!!");
 	}
-	if (a->media <= 5.0){
+	if (a->media <= 5.0) {
 		printf("ganhou um C");
 	}
 }
