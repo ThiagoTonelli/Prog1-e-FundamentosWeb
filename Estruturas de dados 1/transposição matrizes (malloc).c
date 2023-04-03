@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/main.c to edit this template
+ */
 
 /* 
  * File:   main.c
@@ -9,16 +13,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int trans(int **mat, int m, int n) {
     
     int ** matriz = (int**)malloc(n * sizeof(int*));
    for(int a=0; a<m; a++) {
         matriz[a] = (int *) malloc(m * sizeof(int)); }
-   for(int i = 0; i < n; i++)
+   for(int i = 0; i < n; i++){
         for(int j = 0; j < m; j++){
-            printf("\n%d", mat[j][i]); }
-    
+            printf("%d\t", mat[j][i]); }
+    printf("\n");}
 }
 
 
@@ -27,10 +30,12 @@ void preenche(int **mat, int m, int n){
     for(int i = 0; i < m; i++){
         for(int j = 0; j < n; j++){
             mat[i][j] = i;
-            printf("\n%d", mat[i][j]); }
+            printf("%d\t", mat[i][j]); }
+        printf("\n");
     }        
-    
+    printf("\n");
 }
+
 int main(int argc, char** argv) {
    int m=2, n=2; 
     
