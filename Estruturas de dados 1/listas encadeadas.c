@@ -45,18 +45,65 @@ void insere(noLista **l, int v){
 void imprime (noLista **l){
     if(!estaVazia(l)){
         for(noLista* p = *l; p != NULL; p=p->prox){
-            printf("%d ", p->info); }
+            printf("\n%d ", p->info); }
         printf("\n");
     }else {
         printf("a lista ta vazia");
-    }
+    }    
+}
 
+int buscar(noLista **l, int v){
     
+     for(noLista* p = *l; p != NULL; p=p->prox){
+         if(p->info == v){
+             printf("\nachei");
+         }
+       else{
+     }
+  }
+}
+
+void remover(noLista **l, int v){
+    
+    noLista *p, *ant=NULL;
+    for(p = *l; p!=NULL && p->info!=v; p=p->prox){
+        ant = p; }
+        if (p == NULL){
+            printf("Elemento n encontrado");
+       }else {
+            if (ant == NULL){
+                *l = p->prox;}
+            else 
+            { ant->prox = p->prox;}
+                free(p);
+            
+       }
+}
+
+void insereOrdenado(noLista** l, int v){
+    noLista* p, *ant =NULL;
+    for(p = *l; p!=NULL && p->info < v; p=p->prox){
+        ant = p;}
+        noLista *novo = (noLista*)malloc(sizeof(noLista));
+        novo->info = v;
+        novo->prox = p;
+        if (ant == NULL) {
+            *l= novo; }
+        else {
+            ant->prox = novo; }
+        
 }
 int main(int argc, char** argv) {
     noLista *lista = criarLista();
     estaVazia(&lista);
     insere(&lista, 5);
+    insere(&lista, 6);
+    imprime(&lista);
+    buscar(&lista, 5);
+    remover(&lista, 5);
+    imprime(&lista);
+    insereOrdenado(&lista, 4);
     imprime(&lista);
     return (EXIT_SUCCESS);
 }
+
