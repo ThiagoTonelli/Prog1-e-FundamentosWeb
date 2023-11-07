@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trab2.css">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+            <div id="header">
+                    <a href="index.html">Início</a>
+                    <a href="#secao1">Planos</a>
+                    <a href="#faqHead">FAQ</a>
+                    <a href="#faleconosco"><span class="nospacing">Fale&nbsp;Conosco</span></a>          
+            </div>
+            <div class="container">
+                <div class="content">
+                  <div class="image-container">
+                    <img src="imagens/cataratas.jpg" alt="img">
+                  </div>
+                  <div class="overlay">
+                    <div class="info">
+                      <h2>Descubra a maravilha de Foz do Iguaçu!</h2>
+                      <p>Aventure-se nas Cataratas do Iguaçu, uma das Sete Maravilhas Naturais do Mundo. Sinta a força e a beleza das quedas d'água enquanto se encanta com a natureza exuberante.</p>
+                      <p>Explore a imensidão da Usina Hidrelétrica de Itaipu, uma das maiores do mundo, e conheça o funcionamento dessa impressionante obra de engenharia.</p>
+                      <p>Surpreenda-se com a diversidade cultural da tríplice fronteira, onde Brasil, Argentina e Paraguai se encontram, proporcionando uma fusão de sabores, cores e experiências inesquecíveis.</p>
+                      <p>Reserve sua viagem hoje mesmo e deixe-se encantar por Foz do Iguaçu!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="secao1" class="planos">
+                <h2 >NOSSOS PLANOS</h2>
+                  <div class="plan-container">
+                    <div class="plan-row">
+                      <div class="plan">
+                        <img src="imagens/fernandoNoronha.jpg" alt="Destino 1">
+                        <div class="plan-content">
+                          <div class="plan-title">Fernando De Noronha</div>
+                          <div class="plan-link"><a href="./fernando/fernando.html">Saiba mais</a></div>
+                        </div>
+                      </div>
+                      <div class="plan">
+                        <img src="imagens/gramado.jpg" alt="Destino 2">
+                        <div class="plan-content">
+                          <div class="plan-title">Gramado</div>
+                          <div class="plan-link"><a href="./gramado/gramado.html">Saiba mais</a></div>
+                        </div>
+                      </div>
+                    </div><br>
+                    <div class="plan-row">
+                      <div class="plan">
+                        <img src="imagens/Beto.jpg" alt="Destino 3">
+                        <div class="plan-content">
+                          <div class="plan-title">Beto Carrero</div>
+                          <div class="plan-link"><a href="./betocarrero/beto.html">Saiba mais</a></div>
+                        </div>
+                      </div>
+                      <div class="plan">
+                        <img src="imagens/caldasnovas.jpg" alt="Destino 4">
+                        <div class="plan-content">
+                          <div class="plan-title">Caldas Novas</div>
+                          <div class="plan-link"><a href="./caldasnovas/caldas.html">Saiba mais</a></div>
+                        </div>
+                      </div>
+                                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="perg">
+                <h2 id="faqHead">PERGUNTAS FREQUENTES</h2>
+                <div class="faq-container">
+                  <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">Como faço para reservar um pacote de viagem?</div>
+                    <div class="answer">Para reservar um pacote de viagem, você pode entrar em contato com nossa equipe por telefone ou preencher o formulário de reserva em nosso site. Nossos agentes irão ajudá-lo a encontrar o pacote ideal de acordo com suas preferências e disponibilidade.</div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">Quais são as formas de pagamento aceitas?</div>
+                    <div class="answer">Aceitamos pagamentos em dinheiro, PIX, cartões de crédito e transferência bancária. Verifique as opções disponíveis no momento da reserva.</div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">Já perdi o meu voo. O que posso fazer agora?</div>
+                    <div class="answer">Consulte seu agente de viagem de acordo com os canais de contato da loja em que comprou sua viagem ou, em caso de compra on-line, entre em contato com nossa Central de Atendimento para esclarecimento de dúvidas.</div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="question" onclick="toggleAnswer(this)">Fui avisado que minha viagem foi cancelada/alterada. Como devo proceder?</div>
+                    <div class="answer">Contamos com uma equipe focada na resolução dos cancelamentos e remarcações, portanto se sua reserva sofreu alteração ou cancelamento por parte da companhia aérea, fornecedor, hotel, nosso time entrará em contato para apresentar as opções para solução da sua reacomodação. 
+
+
+
+                      Caso prefira, você poderá contatar seu agente de viagens a qualquer momento, de acordo com os canais de contato da loja em que comprou sua viagem. Se sua compra foi on-line, você poderá entrar em contato com nossa Central de Atendimento para esclarecimento de dúvidas.</div>
+                  </div>
+                </div>
+              
+                <script>
+                  function toggleAnswer(element) {
+                    element.nextElementSibling.classList.toggle('active');
+                  }
+                </script>
+              </div>
+              
+              <div id="faleconosco" class="contact-form">
+                <h2>VOCÊ POSSUI DÚVIDA EM QUAL PLANO CONTRATAR? <br><br>Fale Conosco!</h2>
+                <form>
+                  <label for="name">Nome:</label>
+                  <input type="text" id="name" required>
+            
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" required>
+            
+                  <label for="subject">Assunto:</label>
+                  <input type="text" id="subject" required>
+            
+                  <label for="message">Mensagem:</label>
+                  <textarea id="message" rows="4" required></textarea>
+            
+                  <button type="submit">Enviar</button>
+                </form>
+
+              </div>
+    </body>
+    </html>
+</body>
+</html>

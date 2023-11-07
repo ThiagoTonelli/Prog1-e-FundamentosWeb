@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: rgb(64, 153, 255);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  .info-block {
+    margin-bottom: 20px;
+  }
+  
+  .info-block h2 {
+    margin-top: 0;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .finalizar-compra-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .finalizar-compra-button:hover {
+    background-color: green;
+  }
+  
+  

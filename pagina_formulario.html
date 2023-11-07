@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+  <header>
+    <h1>Finalizar Compra</h1>
+  </header>
+  
+  <main>
+    <form action="processar_compra.php" method="post">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="cartao">Número do Cartão:</label>
+        <input type="text" id="cartao" name="cartao" required>
+      </div>
+      
+      <input type="submit" value="Finalizar Compra" class="finalizar-compra-button">
+    </form>
+  </main>
+</body>
+</html>
